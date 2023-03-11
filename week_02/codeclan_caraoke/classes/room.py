@@ -1,8 +1,10 @@
 class Room:
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, room_name):
+        self.room_name = room_name
         self.guest_list = []
         self.playlist = []
+
+    # GUEST_LIST
 
     def guest_count(self):
         return len(self.guest_list)
@@ -12,6 +14,8 @@ class Room:
     
     def check_out_guest(self, guest):
         self.guest_list.remove(guest)
+
+    # PLAY_LIST
 
     def song_count(self):
         return len(self.playlist)
