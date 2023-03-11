@@ -7,8 +7,6 @@ class Guest:
     def pay_entry_fee(self, entry_fee):
         self.guest_cash -= entry_fee
 
-    # Unsure what the error is above.
-    # Code doesn't work without .entry_fee
 
 
 
