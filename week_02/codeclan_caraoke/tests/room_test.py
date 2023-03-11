@@ -5,12 +5,12 @@ from classes.song import *
 
 class TestRoom(unittest.TestCase):
     def setUp(self):
-        self.room_name_1 = Room("60's Room", 2)
-        self.room_name_2 = Room("80's Room", 4)
-        self.room_name_3 = Room("90's Room", 10)
-        self.guest_1 = Guest("Michael Jackson", 37, 10)
-        self.guest_2 = Guest("Boris Johnson", 72, 50)
-        self.guest_3 = Guest("Maggie Thatcher", 104, 100)
+        self.room_name_1 = Room("60's Room", 2, 10.00, 100.00)
+        self.room_name_2 = Room("80's Room", 4, 20.00, 500.00)
+        self.room_name_3 = Room("90's Room", 10, 50.00, 1000.00)
+        self.guest_1 = Guest("Michael Jackson", 37, 10.00)
+        self.guest_2 = Guest("Boris Johnson", 72, 50.00)
+        self.guest_3 = Guest("Maggie Thatcher", 104, 100.00)
         self.song_1 = Song("Final Countdown", "Europe")
         self.song_2 = Song("Smells Like Teen Spirit", "Nirvana")
         self.song_3 = Song("Ruby Tuesday", "The Rolling Stones")
@@ -58,6 +58,12 @@ class TestRoom(unittest.TestCase):
     #     self.assertEqual(True, )
 
     # ENTRY FEE
+
+    def test_room_has_entry_fee(self):
+        self.assertEqual(10.00, self.room_name_1.entry_fee)
+
+    def test_room_has_till(self):
+        self.assertEqual(100.00, self.room_name_1.till)
 
 
         
