@@ -14,6 +14,8 @@ class Room:
     
     def check_in_guest(self, guest):
         self.guest_list.append(guest)
+        self.till += self.entry_fee
+        guest.guest_cash -= self.entry_fee
     
     def check_out_guest(self, guest):
         self.guest_list.remove(guest)
@@ -31,7 +33,6 @@ class Room:
 
     # CAPACITY
 
-    # ENTRY FEE
 
 
 
