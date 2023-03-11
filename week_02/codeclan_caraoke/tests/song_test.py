@@ -2,12 +2,12 @@ import unittest
 from classes.song import *
 
 class TestSong(unittest.TestCase):
-    
+
     def setUp(self):
-        self.song = Song("Final Countdown", "Europe")
+        self.song = Song("Satisfaction", "The Rolling Stones")
 
     def test_song_has_name(self):
-        self.assertEqual("Final Countdown", self.song.song_name)
+        self.assertEqual("Satisfaction", self.song.song_name)
 
     def test_song_has_artist(self):
-        self.assertEqual("Europe", self.song.artist_name)
+        self.assertEqual("The Rolling Stones", self.song.artist_name)

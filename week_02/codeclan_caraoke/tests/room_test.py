@@ -8,12 +8,12 @@ class TestRoom(unittest.TestCase):
         self.room_name_1 = Room("60's Room", 2, 10.00, 100.00)
         self.room_name_2 = Room("80's Room", 4, 20.00, 500.00)
         self.room_name_3 = Room("90's Room", 10, 50.00, 1000.00)
-        self.guest_1 = Guest("Michael Jackson", 37, 10.00)
-        self.guest_2 = Guest("Boris Johnson", 72, 50.00)
-        self.guest_3 = Guest("Maggie Thatcher", 104, 100.00)
-        self.song_1 = Song("Final Countdown", "Europe")
-        self.song_2 = Song("Smells Like Teen Spirit", "Nirvana")
-        self.song_3 = Song("Ruby Tuesday", "The Rolling Stones")
+        self.guest_1 = Guest("Andy", 37, 10.00)
+        self.guest_2 = Guest("Boris", 72, 50.00)
+        self.guest_3 = Guest("Chris", 104, 100.00)
+        self.song_1 = Song("The Rolling Stones", "Satisfaction")
+        self.song_2 = Song("Living on a Prayer", "Bon Jovi")
+        self.song_3 = Song("Wonderwall", "Oasis")
 
     # ROOM
 
