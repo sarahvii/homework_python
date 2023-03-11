@@ -1,8 +1,9 @@
 class Room:
-    def __init__(self, room_name):
+    def __init__(self, room_name, capacity):
         self.room_name = room_name
         self.guest_list = []
         self.playlist = []
+        self.capacity = capacity
 
     # GUEST_LIST
 
@@ -25,3 +26,9 @@ class Room:
 
     def remove_song(self, song):
         self.playlist.remove(song)
+
+    # CAPACITY
+
+
+
+
